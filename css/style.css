@@ -1,0 +1,31 @@
+@font-face {
+	font-family: Montserrat Regular;
+	font-display: auto;
+	src: local("Montserrat Regular"), url("/assets/font/Montserrat-Regular.woff2");
+	font-style: normal;
+}
+@font-face {
+	font-family: Montserrat Bold;
+	font-display: auto;
+	src: local("Montserrat Bold"), url("/assets/font/Montserrat-Bold.woff2");
+	font-style: normal;
+}
+@font-face {
+	font-family: Montserrat ExtraBold;
+	font-display: auto;
+	src: local("Montserrat ExtraBold"), url("/assets/font/Montserrat-ExtraBold.woff2");
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: Montserrat Italic;
+	font-display: auto;
+	src: local("Montserrat Italic"), url("/assets/font/Montserrat-Italic.woff2");
+	font-style: normal;
+}
+@font-face {
+	font-family: Montserrat Medium;
+	font-display: auto;
+	src: local("Montserrat Medium"), url("/assets/font/Montserrat-Medium.woff2");
+	font-style: normal;
+}
