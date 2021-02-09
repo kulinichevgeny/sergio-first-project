@@ -29,3 +29,69 @@
 	src: local("Montserrat Medium"), url("/assets/font/Montserrat-Medium.woff2");
 	font-style: normal;
 }
+
+/* 
+============================================ */
+body,
+h1 {
+	margin: 0;
+	font-family: "Montserrat Medium";
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
+
+header {
+	background-image: url(/assets/img/header-background.jpg);
+	background-size: auto 100%;
+
+	height: 100vh;
+}
+
+/* navigation
+============================================ */
+nav {
+	border-bottom: 1px solid rgba(161, 161, 161, 0.5);
+}
+
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+
+	padding: 40px 0 0 0;
+}
+
+.navbar-links {
+	padding: 0 20px 40px 20px;
+
+	border-bottom: 1px solid transparent;
+	transition: 0.3s linear;
+}
+
+.navbar-links:last-child {
+	margin: 0 -20px 0 0;
+}
+
+.navbar-links a {
+	font-family: "Montserrat Regular";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+
+	color: #fff;
+}
+
+.navbar-links:hover {
+	border-bottom: 1px solid #fff;
+}
