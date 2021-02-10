@@ -207,17 +207,13 @@ h1 {
 	margin: 0 0 70px 0;
 }
 
-.services-button button:hover {
-	box-shadow: 0 0 15px #323232;
-}
-
 .services-block {
 	display: flex;
 	justify-content: space-between;
 
 	height: 200px;
 
-	margin: 0 0 55px 0;
+	margin: 0 0 30px 0;
 }
 
 .services-image {
@@ -225,11 +221,12 @@ h1 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
 	padding: 10px;
 	margin: 10px 0 0 0;
 
-	height: 90px;
-	width: 90px;
+	height: 88px;
+	width: 88px;
 
 	border-radius: 50%;
 	border: 1px solid #e0e0e0;
@@ -240,6 +237,7 @@ h1 {
 	padding: 25px;
 	/* background-image: url(file:///C:/Users/Evgeny%20Kulinich/Desktop/home/sergio-first-project/assets/img/ellipse-small.svg); */
 	background-image: url(/assets/img/ellipse-small.svg);
+	background-size: cover;
 }
 
 .services-block h3 {
@@ -252,9 +250,9 @@ h1 {
 	justify-content: center;
 	flex-basis: 420px;
 
-	margin: 0 20px;
+	margin: 0 30px 0 20px;
 }
 
-.services-content:last-child {
-	margin-right: 0;
+.services-button > button:hover {
+	box-shadow: 0 0 15px #323232;
 }
