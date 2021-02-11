@@ -1,35 +1,36 @@
 @font-face {
 	font-family: Montserrat Regular;
 	font-display: auto;
-	src: local("Montserrat Regular"), url("/assets/fonts/Montserrat-Regular.woff2");
+	src: local("Montserrat Regular"), url("../assets/fonts/Montserrat-Regular.woff2");
 	font-style: normal;
 }
 @font-face {
 	font-family: Montserrat Bold;
 	font-display: auto;
-	src: local("Montserrat Bold"), url("/assets/fonts/Montserrat-Bold.woff2");
+	src: local("Montserrat Bold"), url("../assets/fonts/Montserrat-Bold.woff2");
 	font-style: normal;
 }
 @font-face {
 	font-family: Montserrat ExtraBold;
 	font-display: auto;
-	src: local("Montserrat ExtraBold"), url("/assets/fonts/Montserrat-ExtraBold.woff2");
+	src: local("Montserrat ExtraBold"), url("../assets/fonts/Montserrat-ExtraBold.woff2");
 	font-weight: 800;
 	font-style: normal;
 }
 @font-face {
 	font-family: Montserrat Italic;
 	font-display: auto;
-	src: local("Montserrat Italic"), url("/assets/fonts/Montserrat-Italic.woff2");
+	src: local("Montserrat Italic"), url("../assets/fonts/Montserrat-Italic.woff2");
 	font-style: normal;
 }
 @font-face {
 	font-family: Montserrat Medium;
 	font-display: auto;
-	src: local("Montserrat Medium"), url("/assets/fonts/Montserrat-Medium.woff2");
+	src: local("Montserrat Medium"), url("../assets/fonts/Montserrat-Medium.woff2");
 	font-style: normal;
 }
 
+/* ================ body =============== */
 body,
 h1 {
 	margin: 0;
@@ -38,7 +39,8 @@ h1 {
 
 p,
 h2,
-h3 {
+h3,
+h5 {
 	margin: 0;
 }
 
@@ -46,10 +48,23 @@ ul {
 	list-style-type: none;
 }
 
-a {
-	text-decoration: none;
+.container {
+	width: 70%;
+	margin: 0 auto;
 }
 
+/* ============= flex ================= */
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+/* ============= buttons ================= */
 button {
 	padding: 0;
 	border: none;
@@ -63,14 +78,50 @@ button:focus {
 	outline: none;
 }
 
-.container {
-	width: 70%;
-	margin: 0 auto;
+.button-block {
+	font-family: "Montserrat Medium";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 14px 42px;
+	border-radius: 30px;
+
+	color: #fff;
+	background: #4985ff;
+	transition: 0.1s linear;
+}
+.button-block:hover {
+	box-shadow: 0 0 15px rgb(241, 241, 241);
 }
 
+/* ================ links ============== */
+a {
+	text-decoration: none;
+}
+
+.link-block {
+	font-family: "Montserrat Medium";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+
+	text-decoration-line: underline;
+
+	color: #4985ff;
+}
+.link-block:visited {
+	color: #4985ff;
+}
+.link-block:hover {
+	color: #000;
+}
+
+/* header
+========================================== */
 header {
-	/* background-image: url(file:///C:/Users/Evgeny%20Kulinich/Desktop/home/sergio-first-project/assets/img/header-background.jpg); */
-	background-image: url(/assets/img/header-background.jpg);
+	background-image: url(../assets/img/header-background.jpg);
 	background-size: auto 100%;
 
 	height: 100vh;
@@ -122,7 +173,6 @@ nav {
 	justify-content: center;
 	align-items: center;
 
-	/* error: высота интро больше высоты экрана с height:100%; */
 	height: 100%;
 }
 
@@ -149,25 +199,6 @@ h1 {
 	margin: 0 0 50px 0;
 
 	color: #fff;
-}
-
-.button-block button {
-	padding: 14px 42px;
-	border-radius: 30px;
-
-	font-family: "Montserrat Medium";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 20px;
-
-	color: #fff;
-	background: #4985ff;
-	transition: 0.1s linear;
-}
-
-.button-block button:hover {
-	box-shadow: 0 0 15px rgb(241, 241, 241);
 }
 
 /* services
@@ -235,8 +266,7 @@ h1 {
 .services-image img {
 	width: 40px;
 	padding: 25px;
-	/* background-image: url(file:///C:/Users/Evgeny%20Kulinich/Desktop/home/sergio-first-project/assets/img/ellipse-small.svg); */
-	background-image: url(/assets/img/ellipse-small.svg);
+	background-image: url(../assets/img/ellipse-small.svg);
 	background-size: cover;
 }
 
@@ -253,6 +283,119 @@ h1 {
 	margin: 0 30px 0 20px;
 }
 
-.services-button > button:hover {
-	box-shadow: 0 0 15px #323232;
+.services button:hover {
+	box-shadow: 0 0 15px #000;
+}
+
+/* our works
+======================================= */
+.our-works {
+	background: linear-gradient(#504dc2 50%, #fff 50%);
+	padding: 0 0 85px 0;
+}
+
+.our-works-title {
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 100px 0 70px 0;
+}
+
+.our-works-title h2,
+.our-works-button {
+	flex: 1;
+}
+
+.our-works-title h2 {
+	font-family: "Montserrat Bold";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 53px;
+
+	color: #ffffff;
+}
+
+.our-works-button {
+	text-align: right;
+}
+
+.our-works-items {
+	justify-content: space-between;
+	padding: 0 0 85px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.our-works-item {
+	width: 32%;
+}
+
+.our-works-item img {
+	width: 100%;
+}
+
+.our-works-item h5 {
+	font-family: "Montserrat Medium";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+
+	margin: 30px 0;
+
+	color: #000;
+}
+
+.our-works-item span {
+	font-family: "Montserrat Medium";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+
+	color: #4985ff;
+}
+
+.our-works-item p {
+	font-family: "Montserrat Regular";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 25px;
+
+	margin: 0 0 30px 0;
+
+	color: #999;
+}
+
+/* spam
+====================================== */
+.spam {
+	text-align: center;
+}
+
+.subscribe-block {
+	text-align: center;
+	width: 490px;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.subscribe-block input {
+	flex: 2;
+	outline: none;
+	border-radius: 30px;
+	border: 1px solid #f2f2f2;
+	box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+}
+
+.subscribe-block input::placeholder {
+	padding-left: 20px;
+}
+
+.subscribe-block .button-block {
+	flex: 1;
+	height: 45px;
+
+	border-radius: 0 30px 30px 0;
 }
