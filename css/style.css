@@ -31,17 +31,27 @@
 }
 
 /* ================ body =============== */
-body,
-h1 {
-	margin: 0;
+body {
 	font-family: "Montserrat Regular";
 }
 
-p,
+h1,
 h2,
 h3,
 h5 {
 	margin: 0;
+}
+
+p {
+	font-family: "Montserrat Regular";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 25px;
+
+	margin: 0;
+
+	color: #999;
 }
 
 ul {
@@ -225,17 +235,9 @@ h1 {
 	margin: 0 0 50px 0;
 }
 
-.services-description {
-	font-family: "Montserrat Regular";
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 25px;
-	text-align: center;
-
-	color: #999;
-
+.services > p {
 	margin: 0 0 70px 0;
+	text-align: center;
 }
 
 .services-block {
@@ -254,7 +256,7 @@ h1 {
 	align-items: center;
 
 	padding: 10px;
-	margin: 10px 0 0 0;
+	margin: 15px 0 0 0;
 
 	height: 88px;
 	width: 88px;
@@ -283,8 +285,70 @@ h1 {
 	margin: 0 30px 0 20px;
 }
 
+.services-content > p {
+	font-size: 14px;
+	line-height: 22px;
+}
+
 .services button:hover {
 	box-shadow: 0 0 15px #000;
+}
+
+/* standarts
+======================================= */
+.standarts {
+	background-color: #f6f6f8;
+}
+
+.standarts-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 100px 0;
+
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.standarts-block-content {
+	flex-basis: 45%;
+}
+
+.standarts-block h2 {
+	font-family: "Montserrat Bold";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 53px;
+
+	color: #323232;
+}
+
+.standarts-block p {
+	margin: 40px 0 30px;
+}
+
+.standarts-projects {
+	display: flex;
+	justify-content: space-evenly;
+
+	padding: 70px 0;
+}
+
+.standarts-projects-content-single {
+	display: flex;
+	justify-content: space-between;
+}
+
+.standarts-projects-content-single > div {
+	font-family: "Montserrat Regular";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 53px;
+
+	color: #000;
 }
 
 /* our works
@@ -357,15 +421,7 @@ h1 {
 }
 
 .our-works-item p {
-	font-family: "Montserrat Regular";
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 25px;
-
 	margin: 0 0 30px 0;
-
-	color: #999;
 }
 
 /* spam
