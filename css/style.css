@@ -425,59 +425,72 @@ nav {
 /* video
 ====================================== */
 .video {
-	background: url(../assets/img/video-background.jpg) no-repeat;
+	height: 570px;
+
+	background: url(../assets/img/video-background.jpg) no-repeat center;
 	background-size: cover;
-
-	max-height: 600px;
 }
 
-.video-content {
-	align-items: center;
-	padding: 70px 0 85px;
-}
-
-.video-content h2 {
+.video h2 {
+	padding: 70px 0 0 0;
 	color: #fff;
 }
 
-.video-content > p {
+.video > p {
 	margin: 30px 0 70px;
+
 	color: #fff;
+	text-align: center;
 }
 
-.video-play {
-	align-items: center;
-	justify-content: center;
+.player {
+	position: relative;
+	padding: 0 0 85px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
 
-	background: url(../assets/img/video.png) no-repeat;
+.player-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	max-width: 970px;
+	height: 430px;
+
+	background: url(../assets/img/video.png) no-repeat center;
 	background-size: cover;
 
-	width: 70%;
-	height: 430px;
+	margin: 0 auto;
 }
 
-.video-play-button {
-	justify-content: space-evenly;
+.player-play {
+	display: flex;
 	align-items: center;
 
-	width: 40%;
-	height: 25%;
+	width: 300px;
+	height: 100px;
 
-	border: 1px solid white;
-	border-radius: 100px;
+	border: 1px solid #fff;
+	border-radius: 200px;
+
+	vertical-align: middle;
+
+	transition: box-shadow 0.2s linear;
 }
 
-.video-play-button > img {
+.player-play:hover {
+	cursor: pointer;
+	box-shadow: 0 0 15px #000;
+}
+
+.player-play > img {
 	background-color: #4985ff;
 	border-radius: 50%;
+	margin: 0 20px 0 40px;
 }
 
-.video-play-button > p {
+.player-play > p {
 	color: #fff;
-}
-
-.video-border {
-	border: 1px solid #e0e0e0;
 }
 
 /* spam
