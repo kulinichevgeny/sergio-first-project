@@ -480,7 +480,7 @@ nav {
 
 .player-play:hover {
 	cursor: pointer;
-	box-shadow: 0 0 15px #000;
+	box-shadow: 0 0 15px #ccc;
 }
 
 .player-play > img {
