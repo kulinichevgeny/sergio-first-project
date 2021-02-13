@@ -475,12 +475,12 @@ nav {
 
 	vertical-align: middle;
 
-	transition: box-shadow 0.2s linear;
+	transition: box-shadow 0.3s linear;
 }
 
 .player-play:hover {
 	cursor: pointer;
-	box-shadow: 0 0 15px #ccc;
+	box-shadow: 0 0 15px #000;
 }
 
 .player-play > img {
