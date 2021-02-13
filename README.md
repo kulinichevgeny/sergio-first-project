@@ -1,6 +1,6 @@
 # 	Sergio First Project - Landing Page
 
-![Landing Page Preview](/assets/img/preview.jpg)
+![Landing Page Preview](/assets/img/preview.gif)
 
 ## About
 
