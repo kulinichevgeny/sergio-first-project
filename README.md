@@ -8,7 +8,7 @@ This is the second IT SHATLE homework. An example of landing page to illustrate 
 
 ## Questions?
 
-Have a bug or an issue with this project? [Open a new issue](https://github.com/kulinichevgeny/inline-block-project/issues/new) here on GitHub
+Have a bug or an issue with this project? [Open a new issue](https://github.com/kulinichevgeny/sergio-first-project/issues/new) here on GitHub
 
 ## Developer
 
