@@ -259,17 +259,15 @@ nav {
 .services-image {
 	height: 88px;
 	width: 88px;
-
 	padding: 10px;
 	margin: 15px 0 0 0;
-
 	border-radius: 50%;
 	border: 1px solid #e0e0e0;
 }
 
 .services-image > img {
 	width: 40px;
-	padding: 25px;
+	padding: 24px;
 	background-image: url(../assets/img/ellipse-small.svg);
 	background-size: cover;
 }
@@ -374,6 +372,7 @@ nav {
 	justify-content: space-between;
 	padding: 0 0 85px 0;
 	border-bottom: 1px solid #e0e0e0;
+	flex-wrap: wrap;
 }
 
 .our-works-item {
@@ -608,4 +607,12 @@ nav {
 
 	font-size: 13px;
 	line-height: 21px;
+}
+
+/* media queries
+====================================== */
+@media (max-width: 768px) {
+	.our-works-item {
+		width: 47%;
+	}
 }
