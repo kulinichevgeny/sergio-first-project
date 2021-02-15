@@ -1,4 +1,4 @@
-# 	Sergio First Project - Landing Page
+# 	[Sergio](https://github.com/serprok9694) First Project - Landing Page
 
 ![Landing Page Preview](/assets/img/preview.gif)
 
